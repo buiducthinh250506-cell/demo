@@ -1,0 +1,20 @@
+[
+  {
+    "id": "demo-student",
+    "username": "sinhvien",
+    "fullName": "Sinh viên Demo",
+    "email": "sinhvien@example.com",
+    "passwordHash": "81c2d6887246eaeab023a978f050dff3d17b5609bf288b46182cdb131d5432e6ebe61ab7568838ade028461988b8d35cce26454fcdc9027339a185e0e9212709",
+    "passwordSalt": "db18f7147be2b46e257b19de9a8c137b",
+    "createdAt": "2026-07-19T08:29:10.229Z"
+  },
+  {
+    "id": "818c3261-a807-4d8e-ac95-532f371de4e9",
+    "username": "thinh250506",
+    "fullName": "57. Bui Duc Thinh",
+    "email": "thinh250506@gmail.com",
+    "passwordHash": "d58175156ecdca61ad0bc823964ab4a89d9fcd348b7418823a2f89413a3f783298cbbc4a39aa45d44413a0f7fe5a0b8008dacd1b612b9f9eadf48a421eae8aea",
+    "passwordSalt": "a8dc854e666f39757fb9e1af0b382fd5",
+    "createdAt": "2026-07-19T09:05:40.892Z"
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "id": "tx-001",
+    "type": "income",
+    "categoryId": "inc-salary",
+    "category": "Lương",
+    "amount": 12500000,
+    "date": "2026-07-01",
+    "note": "Lương tháng 7",
+    "ownerId": "demo-student"
+  },
+  {
+    "id": "tx-002",
+    "type": "expense",
+    "categoryId": "exp-food",
+    "category": "Ăn uống",
+    "amount": 850000,
+    "date": "2026-07-03",
+    "note": "Đi chợ và ăn trưa",
+    "ownerId": "demo-student"
+  },
+  {
+    "id": "tx-003",
+    "type": "expense",
+    "categoryId": "exp-transport",
+    "category": "Di chuyển",
+    "amount": 320000,
+    "date": "2026-07-08",
+    "note": "Xăng xe",
+    "ownerId": "demo-student"
+  },
+  {
+    "id": "tx-004",
+    "type": "income",
+    "categoryId": "inc-freelance",
+    "category": "Làm thêm",
+    "amount": 1500000,
+    "date": "2026-07-12",
+    "note": "Thiết kế slide",
+    "ownerId": "demo-student"
+  },
+  {
+    "id": "tx-005",
+    "type": "expense",
+    "categoryId": "exp-education",
+    "category": "Học tập",
+    "amount": 450000,
+    "date": "2026-07-15",
+    "note": "Mua sách chuyên ngành",
+    "ownerId": "demo-student"
+  },
+  {
+    "id": "5645f020-4e7a-47d3-8957-6f0f58700985",
+    "ownerId": "demo-student",
+    "type": "income",
+    "categoryId": "inc-salary",
+    "category": "Lương",
+    "amount": 12001,
+    "date": "2026-07-19",
+    "note": "",
+    "createdAt": "2026-07-19T08:35:25.098Z"
+  },
+  {
+    "id": "55d5844d-eb8d-48bc-a248-e2327223a645",
+    "createdAt": "2026-07-19T08:35:40.915Z",
+    "ownerId": "demo-student",
+    "type": "income",
+    "categoryId": "inc-salary",
+    "category": "Lương",
+    "amount": 1000000,
+    "date": "2026-07-19",
+    "note": ""
+  },
+  {
+    "id": "6f1074e9-9aa2-479e-aa35-fe7e6a31b1e8",
+    "createdAt": "2026-07-19T08:37:07.218Z",
+    "ownerId": "demo-student",
+    "type": "income",
+    "categoryId": "inc-investment",
+    "category": "Đầu tư",
+    "amount": 500000,
+    "date": "2026-07-19",
+    "note": ""
+  },
+  {
+    "id": "af551a4c-10a3-4a96-9d0c-1ce5145191f3",
+    "ownerId": "demo-student",
+    "type": "expense",
+    "categoryId": "other",
+    "category": "Cầu lông",
+    "amount": 50000,
+    "date": "2026-07-19",
+    "note": "",
+    "createdAt": "2026-07-19T08:39:39.742Z"
+  },
+  {
+    "id": "91ba2f5e-549f-4ed0-844c-db16298445b4",
+    "ownerId": "demo-student",
+    "type": "income",
+    "categoryId": "inc-freelance",
+    "category": "Làm thêm",
+    "amount": 60000,
+    "date": "2026-07-19",
+    "note": "",
+    "createdAt": "2026-07-19T08:43:44.493Z"
+  },
+  {
+    "id": "0aa7e5de-9560-416a-b752-8a0305aa731d",
+    "ownerId": "818c3261-a807-4d8e-ac95-532f371de4e9",
+    "type": "income",
+    "categoryId": "inc-salary",
+    "category": "Lương",
+    "amount": 5000000,
+    "date": "2026-07-19",
+    "note": "",
+    "createdAt": "2026-07-19T09:25:43.373Z"
+  },
+  {
+    "id": "62245933-2431-49c3-bba5-eaecc2fd8ca1",
+    "ownerId": "818c3261-a807-4d8e-ac95-532f371de4e9",
+    "type": "expense",
+    "categoryId": "exp-food",
+    "category": "Ăn uống",
+    "amount": 30000,
+    "date": "2026-07-19",
+    "note": "",
+    "createdAt": "2026-07-19T09:25:55.587Z"
+  },
+  {
+    "id": "a8be4b27-b553-42ac-9981-1dc90583c996",
+    "ownerId": "demo-student",
+    "type": "income",
+    "categoryId": "inc-salary",
+    "category": "Lương",
+    "amount": 50000,
+    "date": "2026-07-19",
+    "note": "",
+    "createdAt": "2026-07-19T13:19:18.828Z"
+  }
+]

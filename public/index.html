@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiêu sinh viên | File Storage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="authView" class="auth-view">
+      <div class="auth-copy"><p class="eyebrow"><span></span> QUẢN LÝ TÀI CHÍNH SINH VIÊN</p><h1>Hiểu dòng tiền.<br /><em>Sống chủ động.</em></h1><p>Theo dõi khoản thu, chi và xây dựng thói quen tài chính lành mạnh ngay từ hôm nay.</p><div class="auth-points"><span>✓ Ghi chép nhanh</span><span>✓ Biểu đồ trực quan</span><span>✓ Lưu trữ an toàn</span></div></div>
+      <div class="auth-card">
+        <div class="auth-brand"><span>₫</span><div><strong>StudentMoney</strong><small>Sổ thu chi cá nhân</small></div></div>
+        <div class="auth-tabs"><button class="auth-tab active" data-auth="login">Đăng nhập</button><button class="auth-tab" data-auth="register">Đăng ký</button></div>
+        <form id="loginForm" class="auth-form"><h2>Chào mừng trở lại!</h2><p>Đăng nhập để xem tình hình tài chính của bạn.</p><label>Tên đăng nhập hoặc email<input name="identity" required autocomplete="username" placeholder="Nhập tên đăng nhập" /></label><label>Mật khẩu<input name="password" type="password" required autocomplete="current-password" placeholder="Nhập mật khẩu" /></label><button class="primary-button" type="submit">Đăng nhập <span>→</span></button><div class="demo-credential">Tài khoản mẫu: <b>sinhvien</b> · Mật khẩu: <b>sinhvien123</b></div></form>
+        <form id="registerForm" class="auth-form hidden"><h2>Tạo tài khoản mới</h2><p>Bắt đầu theo dõi chi tiêu của riêng bạn.</p><label>Họ và tên<input name="fullName" required maxlength="60" placeholder="Ví dụ: Nguyễn Minh An" /></label><label>Tên đăng nhập<input name="username" required minlength="4" maxlength="30" autocomplete="username" placeholder="Ít nhất 4 ký tự" /></label><label>Email<input name="email" required type="email" autocomplete="email" placeholder="ban@email.com" /></label><label>Mật khẩu<input name="password" required minlength="6" type="password" autocomplete="new-password" placeholder="Ít nhất 6 ký tự" /></label><button class="primary-button" type="submit">Tạo tài khoản <span>→</span></button></form>
+      </div>
+    </section>
+
+    <main id="appView" class="app-view hidden">
+      <header class="topbar"><a class="brand" href="#"><span>₫</span><div><strong>StudentMoney</strong><small>Quản lý chi tiêu</small></div></a><div class="topbar-right"><span class="storage-status"><i></i> Đang lưu bằng JSON</span><button id="userButton" class="user-button" type="button"><b id="userInitial">S</b><span id="userName">Sinh viên</span><em>⌄</em></button><button id="logoutButton" class="logout-button" type="button">Đăng xuất</button></div></header>
+      <div class="app-shell">
+        <header class="dashboard-heading"><div><p class="eyebrow"><span></span> TỔNG QUAN CÁ NHÂN</p><h1>Xin chào, <em id="greetingName">bạn</em>!</h1><p>Đây là bức tranh tài chính của bạn trong khoảng thời gian đã chọn.</p></div><div class="period-control"><label for="period">Khoảng thời gian</label><select id="period"><option value="all">Tất cả giao dịch</option><option value="today">Hôm nay</option><option value="week">7 ngày gần đây</option><option value="month">Tháng này</option><option value="custom">Tự chọn khoảng ngày</option></select><div id="customDates" class="custom-dates hidden"><input id="fromDate" type="date" aria-label="Từ ngày" /><span>—</span><input id="toDate" type="date" aria-label="Đến ngày" /></div></div></header>
+        <section class="summary" aria-label="Tổng quan tài chính"><article class="stat income"><div class="stat-icon">↗</div><div><span>Tổng thu</span><strong id="totalIncome">0 ₫</strong></div></article><article class="stat expense"><div class="stat-icon">↙</div><div><span>Tổng chi</span><strong id="totalExpense">0 ₫</strong></div></article><article class="stat balance"><div class="stat-icon">◈</div><div><span>Số dư</span><strong id="balance">0 ₫</strong></div></article></section>
+        <section class="analysis-grid"><article class="chart-card"><div class="card-heading"><div><p class="section-label">PHÂN BỔ CHI TIÊU</p><h2>Theo danh mục</h2></div><span id="expenseCount" class="soft-badge">0 giao dịch</span></div><div class="donut-layout"><div id="donut" class="donut"><div><strong id="donutTotal">0 ₫</strong><small>Tổng chi</small></div></div><div id="donutLegend" class="legend"></div></div></article><article class="chart-card"><div class="card-heading"><div><p class="section-label">SO SÁNH</p><h2>Chi tiêu theo danh mục</h2></div></div><div id="barChart" class="bar-chart"></div></article></section>
+          <section class="workspace"><aside class="form-panel"><div class="card-heading"><div><p class="section-label">GIAO DỊCH</p><h2 id="formTitle">Thêm giao dịch</h2></div><button id="cancelEdit" class="text-button hidden" type="button">Hủy sửa</button></div><form id="transactionForm"><input id="transactionId" type="hidden" /><label>Loại giao dịch <div class="type-switch"><input id="income" name="type" type="radio" value="income" checked /><label for="income">↗ Thu nhập</label><input id="expense" name="type" type="radio" value="expense" /><label for="expense">↙ Chi tiêu</label></div></label><label>Danh mục<select id="categoryId" name="categoryId" required></select></label><label id="otherCategoryGroup" class="hidden">Tên danh mục khác<input id="customCategory" name="customCategory" maxlength="60" placeholder="Ví dụ: Sửa xe" /></label><p class="category-hint">Danh mục có sẵn được thiết lập trong file dữ liệu.</p><label>Số tiền<div class="money-input"><input id="amount" name="amount" type="number" min="1" step="1" placeholder="0" required /><span>₫</span></div></label><label>Ngày giao dịch<input id="date" name="date" type="date" required /></label><label>Ghi chú<textarea id="note" name="note" rows="2" maxlength="160" placeholder="Không bắt buộc"></textarea></label><button class="primary-button" type="submit"><span id="submitText">Lưu giao dịch</span><span id="submitIcon">+</span></button></form></aside>
+          <section class="transactions-panel"><div class="card-heading list-heading"><div><p class="section-label">LỊCH SỬ</p><h2>Giao dịch của bạn</h2></div><div class="filters" role="group" aria-label="Lọc giao dịch"><button class="filter active" data-filter="all">Tất cả</button><button class="filter" data-filter="income">Thu</button><button class="filter" data-filter="expense">Chi</button></div></div><div id="transactionList" class="transaction-list" aria-live="polite"></div></section>
+        </section>
+      </div>
+    </main>
+    <div id="toast" class="toast" role="status"></div><script src="app.js"></script>
+  </body>
+</html>

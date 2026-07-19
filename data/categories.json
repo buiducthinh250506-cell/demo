@@ -1,0 +1,13 @@
+[
+  { "id": "inc-salary", "name": "Lương", "type": "income", "sortOrder": 1, "active": true },
+  { "id": "inc-freelance", "name": "Làm thêm", "type": "income", "sortOrder": 2, "active": true },
+  { "id": "inc-investment", "name": "Đầu tư", "type": "income", "sortOrder": 3, "active": true },
+  { "id": "inc-gift", "name": "Quà tặng", "type": "income", "sortOrder": 4, "active": true },
+  { "id": "exp-food", "name": "Ăn uống", "type": "expense", "sortOrder": 1, "active": true },
+  { "id": "exp-transport", "name": "Di chuyển", "type": "expense", "sortOrder": 2, "active": true },
+  { "id": "exp-housing", "name": "Nhà ở & hóa đơn", "type": "expense", "sortOrder": 3, "active": true },
+  { "id": "exp-shopping", "name": "Mua sắm", "type": "expense", "sortOrder": 4, "active": true },
+  { "id": "exp-education", "name": "Học tập", "type": "expense", "sortOrder": 5, "active": true },
+  { "id": "exp-health", "name": "Sức khỏe", "type": "expense", "sortOrder": 6, "active": true },
+  { "id": "exp-entertainment", "name": "Giải trí", "type": "expense", "sortOrder": 7, "active": true }
+]
